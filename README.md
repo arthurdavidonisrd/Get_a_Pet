@@ -1,37 +1,46 @@
-A API Get a Pet é voltada para a adoção de animais e foi desenvolvida com o intuito de facilitar o processo de adoção, conectando pessoas que desejam adotar animais com os pets disponíveis. A arquitetura utilizada segue o padrão MVC (Model-View-Controller), implementada em Node.js com Express, e possui endpoints para gerenciar tanto os usuários quanto os pets.
+# Welcome to your Expo app 👋
 
-Principais funcionalidades da API:
-Gerenciamento de Pets:
+<h1 align="center">Get a Pet Rest API</h1>
+<p align="center" font="bold">
+The Get a Pet API is designed to streamline the pet adoption process, connecting individuals looking to adopt animals with available pets. Built using the MVC (Model-View-Controller) architecture in Node.js with Express, the API provides endpoints for managing both users and pets.
+</p>
 
-Cadastro de Pets: Usuários podem cadastrar um novo pet para adoção, incluindo informações como nome, idade, raça, descrição e imagens.
-Listagem de Pets: Todos os pets disponíveis para adoção podem ser listados através de um endpoint, permitindo também filtros como espécie, idade, entre outros.
-Detalhes de um Pet: Um pet específico pode ser consultado com detalhes, como histórico, vacinas e informações adicionais fornecidas pelo usuário que o cadastrou.
-Atualização de Pets: Usuários que cadastraram o pet podem atualizar as informações dele, como adicionar novos dados ou imagens.
-Exclusão de Pets: O pet pode ser removido da listagem caso seja adotado ou não esteja mais disponível.
-Gerenciamento de Usuários:
+# Main Features of the API:
+<p
+  >Pet Management:
+  
+  Pet Registration: Users can register a new pet for adoption, providing information such as the pet's name, age, breed, description, and images.
+  List Pets: All pets available for adoption can be retrieved through an endpoint, with optional filters like species, age, and more.
+  Pet Details: Specific details of a pet can be viewed, including history, vaccines, and additional information provided by the user who registered the pet.
+  Update Pets: Users who registered a pet can update its information, such as adding new data or images.
+  Delete Pets: A pet can be removed from the list once it is adopted or no longer available.
+</p>
 
-Cadastro de Usuários: Usuários podem se cadastrar na plataforma, fornecendo seus dados pessoais, como nome, e-mail e senha. Cada usuário tem um perfil onde pode gerenciar os pets que cadastrou.
-Autenticação de Usuários: Implementada com autenticação via JWT (JSON Web Token), garantindo que apenas usuários autenticados possam realizar ações restritas, como cadastrar, editar ou excluir pets.
-Atualização de Perfil: Usuários podem atualizar suas informações pessoais, como e-mail ou senha.
-Exclusão de Conta: A API permite que o usuário exclua sua conta, removendo seu perfil e os pets associados.
-Adoção de Pets:
+<p>
+  User Management:
+  
+  User Registration: Users can sign up by providing their personal details, such as name, email, and password. Each user has a profile where they can manage their registered pets.
+  User Authentication: Authentication is implemented using JWT (JSON Web Token), ensuring that only authenticated users can perform restricted actions like registering, editing, or deleting pets.
+  Profile Update: Users can update their personal information, such as email or password.
+  Account Deletion: The API allows users to delete their account, which also removes their profile and any associated pets.
+</p>
 
-Solicitação de Adoção: Usuários interessados em um pet podem enviar uma solicitação de adoção, que será vinculada ao pet e ao usuário que o cadastrou.
-Gerenciamento de Solicitações: O dono do pet pode gerenciar as solicitações de adoção, aceitando ou rejeitando as ofertas de potenciais adotantes.
-Histórico de Adoção: A API mantém um histórico de pets adotados, permitindo rastrear quais animais foram adotados e por quem.
-Stack e Tecnologias Utilizadas:
-Node.js com Express: para construir o back-end e criar os endpoints.
-Sequelize: ORM para gerenciar a comunicação com o banco de dados (provavelmente MySQL ou PostgreSQL).
-JWT: para autenticação e autorização de usuários.
-Multer: para upload e gerenciamento de imagens dos pets.
-Bcrypt: para criptografia de senhas dos usuários.
-Estrutura de Endpoints (exemplo):
-POST /pets: Cadastrar um novo pet.
-GET /pets: Listar todos os pets disponíveis.
-GET /pets/:id: Obter detalhes de um pet específico.
-PUT /pets/:id: Atualizar informações de um pet.
-DELETE /pets/:id: Remover um pet.
-POST /users: Registrar um novo usuário.
-POST /login: Autenticar um usuário.
-POST /adopt/:petId: Enviar uma solicitação de adoção.
-Essa API facilita tanto para quem deseja adotar um animal quanto para quem precisa colocar um pet para adoção, tornando o processo mais organizado e seguro.
+<p>
+  Pet Adoption:
+
+  Adoption Request: Users interested in a pet can submit an adoption request, which is linked to the pet and the user who registered it.
+  Manage Requests: The pet owner can manage adoption requests, accepting or rejecting offers from potential adopters.
+  Adoption History: The API keeps a history of adopted pets, tracking which animals were adopted and by whom.
+  
+</p>
+
+
+# Technologies
+<div dislplay="flex">
+   
+<img width="50px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+<img width="50px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+<img width="50px" height="40px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+
+
+
