@@ -1,4 +1,4 @@
-# Welcome to your Expo app 👋
+
 
 <h1 align="center">Get a Pet Rest API</h1>
 <p align="center" font="bold">
